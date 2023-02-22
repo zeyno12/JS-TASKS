@@ -1,0 +1,85 @@
+#counter button {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: palevioletred;
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+#counter .count_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#counter .count_item #count {
+  margin: 0px 10px;
+  width: 100px;
+  padding: 10px;
+  border: 1px solid purple;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.open_animation {
+  position: relative;
+}
+.open_animation .open_item {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  padding: 10px 20px;
+  z-index: 66;
+}
+.open_animation .open_item img {
+  width: 50px;
+}
+.open_animation .position_item {
+  transform: translateX(900px);
+  transition: 0.2s ease-in-out;
+  z-index: -1;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  padding: 20px 20px;
+  width: 500px;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: rgb(14, 120, 177);
+}
+.open_animation .position_item h1 {
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+  line-height: 30px;
+  letter-spacing: 1.1px;
+}
+.open_animation .position_item p {
+  font-size: 14px;
+  color: white;
+  font-weight: 200;
+}
+.open_animation .position_item::-webkit-scrollbar {
+  width: 22px;
+}
+.open_animation .position_item::-webkit-scrollbar-track {
+  background: rgb(14, 118, 163); /* color of the tracking area */
+}
+.open_animation .position_item::-webkit-scrollbar-thumb {
+  background-color: rgb(209, 209, 209); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid rgb(193, 192, 191); /* creates padding around scroll thumb */
+}
+
+.active {
+  transform: translateX(0) !important;
+}
+
+body {
+  overflow-x: hidden;
+}/*# sourceMappingURL=style.css.map */

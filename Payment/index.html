@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Paymant Systems</title>
+    <style>
+        #outputname,#outputPassword{
+            background-color: red;
+            color: white;
+            padding: 10px;
+            margin: 10px 0px;
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 mt-5">
+
+                <form action="">
+                    <label for="username">Username</label>
+                    <input class="w-100 p-2  shadow-none" type="text" placeholder="Username" name="username" id="name">
+                    <p id="outputname"> User name is Incorrect!!!</p>
+                    <label class="mt-3" for="Password">Password</label>
+                    <input name="password" id="password" class="w-100 p-2  shadow-none" type="password" placeholder="enter the Password">
+                    <p id="outputPassword">Password is Incorrect </p>
+                    <button id="btn_click" class="btn btn-primary w-100 mt-4" type="submit">LOG IN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+    <script src="app.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

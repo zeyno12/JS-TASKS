@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="scss/style.css">
+        <title>Paymant Systems</title>
+        <style>
+            #moneyCheck{
+                display: none;
+                margin: 10px 0px;
+                background-color: red;
+                color: white;
+                text-align: center;
+                padding: 10px 0px;
+                
+            }
+            #BalancePrice{
+                padding: 10px;
+                border: none;
+                background-color: darkblue;
+                width: 100%;
+                color: white;
+                text-align: center;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 mt-5">
+
+                   <input id="BalancePrice" type="text" value="4000" readonly>
+                    <input type="tel" class="w-100 p-3 mt-3 shadow-none"
+                        name="balans" id="balans" placeholder="Meblegi daxil edin">
+                        <p id="moneyCheck"> Zehmet olmasa duzgun reqem daxil edin</p>
+
+                    <button class="btn btn-primary shadow-none p-4 mt-3 w-100"
+                        type="submit" id="Pullmoney">Tesdiq et</button>
+
+                        <button id="exit" type="submit" class="btn btn-danger w-100 p-4 mt-5 ">Cixis</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="app.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

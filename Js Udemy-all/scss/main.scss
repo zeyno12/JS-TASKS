@@ -1,0 +1,10 @@
+
+@import "_var";
+*{
+box-sizing: border-box;
+}
+body{
+background-color: $bebeyimsu;
+font-family: Arial, Helvetica, sans-serif;
+}
+@import "_header";

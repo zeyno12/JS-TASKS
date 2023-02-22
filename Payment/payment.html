@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="scss/style.css">
+    <title>Paymant Systems</title>
+</head>
+<style>
+
+    #outputCartCode,#outputCVV,#outputDate{
+
+        background-color: red;
+        color: white;
+        padding: 10px 0px;
+        margin: 4px 0px;
+        display: none;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 mt-5">
+
+          
+               <input type="tel" class="w-100 p-3 mt-3 shadow-none" name="money" id="money" placeholder="kartinizi daxil edin">
+               <p id="outputCartCode"> Cart Number is Incorrect!!!</p>
+               <input type="tel" class="w-100 p-3 mt-3 shadow-none" name="cvv" id="cvv" placeholder="cvv-i daxil edin" >
+               <p id="outputCVV"> CVV is Incorrect!!!</p>
+               <input class="p-3 mt-3 w-100 shadow-none" type="text" placeholder="zamani daxil edin" name="date" id="date">
+               <p id="outputDate"> Date is Incorrect!!!</p>
+               <button id="tesdiq" class="btn btn-primary shadow-none p-4 mt-3 w-100" type="submit">Tesdiq et</button>     
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+    <script src="app.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

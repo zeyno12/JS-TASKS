@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <title>Img TITILE CODE APPEND</title>
+        <style>
+            .data{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: 0px 7px 9px 5px grey;
+                border-radius: 13px;
+                padding: 26px;
+            }
+            .title img{
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            h4{
+                font-size: 17px;
+            }
+            .title{
+                margin-top: 30px;
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-lg-12"> <label class="fw-bold"
+                                    for="name">NAME</label>
+                                <input class="w-100 p-3 mt-1" type="text"
+                                    name="name" id="name"
+                                    placeholder="enter the Image name"></div>
+                            <div class="col-lg-12"> <label class="fw-bold"
+                                    for="title">TITLE</label>
+                                <input class="w-100 p-3 mt-1" type="text"
+                                    name="title" id="title"
+                                    placeholder="enter the Images title"></div>
+                            <div class="col-lg-12"> <label class="fw-bold"
+                                    for="Image">IMG</label>
+                                <input class="w-100 p-3 mt-1" type="text"
+                                    name="imgSrc" id="imgSrc" placeholder="Enter
+                                    the Images Link"></div>
+                        </div>
+                        <button class="btn btn-primary shadow-none w-100 mt-3
+                            p-3"type="submit">Add Item</button>
+
+
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <input class="p-3 w-100" type="text" name="datas" id="datas" placeholder="add data">
+
+                    <button class="btn btn-primary shadow-none mt-5 w-100 p-3" type="submit" id="added">ADD LOCAL STORAGE</button>
+                    <p id="outdata">
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
